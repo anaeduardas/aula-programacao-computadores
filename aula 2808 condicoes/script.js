@@ -14,12 +14,12 @@ condicoes
 if (_______________ ____________ _______________)
     var ou text/num              var ou text/num
 
-= =: igual/comparacao
->: maior 
-> =: maior igual
-<: menor
-< =: menor igual
-! =: diferente
+= = : igual/comparacao
+> : maior 
+> = : maior igual
+< : menor
+< = : menor igual
+! = : diferente
 */
 var anoAtual = 2024;
 var anoNascimento = parseInt(prompt("digite seu ano de nascimento:"));
