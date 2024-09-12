@@ -9,14 +9,35 @@ Especificação Preço unitário
 
 Escrever um algoritmo que leia o código do lanche pedido, a quantidade e calcule o valor a ser pago por aquele lanche. 
 */
+var codigo = parseFloat(prompt("Digite o código do lanche: "));
 
-var codigoLanche = parseFloat(prompt("Digite o código do lanche: "));
-var quantidade = parseFloat(prompt("Digite a quantidade: "));
+var cachorroQuente = 100
+var bauruSimples = 101
+var bauruComOvo = 102
+var hamburguer = 103
+var cheeseburguer = 104
 
-var cachorroQuente = 1.10
-var bauruSimples = 1.30
-var bauruComovo = 1.50
-var hamburguer = 1.10
-var cheeseburguer = 1.30
-console. log("listagem do cardápio: " + cachorroQuente + bauruSimples + bauruComovo + hamburguer + cheeseburguer);
+var preco100 = 1.10
+var preco101 = 1.30
+var preco102 = 1.50
+var preco103 = 1.10
+var preco104 = 1.30
 
+
+if (codigo == 100 ){
+    console.log(" pedido: Cachorro quente  ");
+} else if (codigo == 101 ){
+    console.log("pedido: Bauru simples " );
+} else if (codigo == 102){
+    console.log("pedido: Bauru com ovo " );
+} else if (codigo == 103 ){
+    console.log ("pedido: Hamburguer" );
+} else if (codigo == 104){
+    console.log ("pedido: Cheeseburguer " );
+} 
+
+var quantidade = parseInt (prompt("Digite a quantidade: "));
+console.log ("quantidade: " + quantidade);
+
+valor100 = quantidade * preco100;
+console.log ("o valor total foi: R$ " + valor100 );
