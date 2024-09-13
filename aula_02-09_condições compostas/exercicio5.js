@@ -8,7 +8,20 @@ Código =>  Condição Pagamento
 4      => Em 3 vezes, preço + 10% de juros
 */
 
-var quantidade = parseFloat(prompt("Digite a quantidade: "));
-var preco1 = 100;
-var preco2 = 150;
-var preco3 = 200;
+var descricaocardapio = "==== Escolha uma comida ====\n";
+
+descricaocardapio = descricaocardapio = "cód | nome"
+descricaocardapio += "10|Arroz | 20,00\n";
+descricaocardapio += "20|feijao | 7,90\n";
+descricaocardapio += "30|açucar | 17,00\n";
+descricaocardapio += "40|sal | 15,00\n";
+descricaocardapio += "50|sazon | 10,00\n";
+descricaocardapio += "\ndigite o codigo do alimento escolhido"
+
+var codigoAlimento = parseInt (prompt(descricaocardapio));
+
+var quantidade = parseInt(prompt("digite a quantidade dos produtos: "));
+
+var valorTotal = 0
+
+if (codigoAlimento == )

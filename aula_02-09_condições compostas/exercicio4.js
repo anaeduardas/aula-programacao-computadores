@@ -39,5 +39,18 @@ if (codigo == 100 ){
 var quantidade = parseInt (prompt("Digite a quantidade: "));
 console.log ("quantidade: " + quantidade);
 
-valor100 = quantidade * preco100;
+var valor100 = quantidade * preco100;
 console.log ("o valor total foi: R$ " + valor100 );
+
+var valor101 = quantidade * preco101;
+console.log("o valor total foi de: " + valor101);
+
+var valor102 = quantidade * preco102;
+console.log("o valor total foi: " + valor102);
+
+var valor103 = quantidade * preco103;
+console.log("O valor total foi de: " + valor103);
+
+var valor104 = quantidade * preco104;
+console.log("o valor toal foi: " + valor104);
+
