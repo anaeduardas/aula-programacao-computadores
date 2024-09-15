@@ -14,4 +14,4 @@ var sal = 6.00
 var acucar = 17.50
 
 var quantidade = parseFloat (prompt(" Digite a quantidade de alimentos: "));
-var total * 
+var total 
