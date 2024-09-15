@@ -12,4 +12,4 @@ if (idade < 12){
     console.log("a classificação é 16 anos");
 }  else if (idade > 18){
     console.log("a classificação é 18 anos");
-}
+}   

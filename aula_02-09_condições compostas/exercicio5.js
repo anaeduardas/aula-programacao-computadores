@@ -8,7 +8,10 @@ Código =>  Condição Pagamento
 4      => Em 3 vezes, preço + 10% de juros
 */
 
-var quantidade = parseFloat(prompt("Digite a quantidade: "));
-var preco1 = 100;
-var preco2 = 150;
-var preco3 = 200;
+var arroz = 20.00
+var feijão= 14.50
+var sal = 6.00
+var acucar = 17.50
+
+var quantidade = parseFloat (prompt(" Digite a quantidade de alimentos: "));
+var total * 
