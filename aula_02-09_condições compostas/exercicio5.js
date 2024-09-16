@@ -10,8 +10,8 @@ Código =>  Condição Pagamento
 
 
 var precoDoProduto =  parseFloat(prompt("Digite o valor do produto: "));
-var quantidade = parseFloat(prompt(" Digite a quantidade dos produtos: "));
-var valorTotal = precoDoProduto * quantidade ;
+var quantidade = parseInt(prompt(" Digite a quantidade dos produtos: "));
+var valorTotal = precoDoProduto * quantidade; 
 
 var descricaoCodigo = "======= Escolha uma condição de pagamento =====\n ";
 descricaoCodigo = descricaoCodigo = "cód | condição de pagamento \n ";
@@ -23,7 +23,22 @@ descricaoCodigo += "4 | Em 3 vezes, preço + 10% de juros\n ";
 var codigoPagamento = parseInt(prompt(descricaoCodigo));
 
 if (codigoPagamento == 1){
-  valorTotal / 0.1 ;  
-  console.log (" o valor foi: " + valorTotal);
+  valorTotal = valorTotal - valorTotal * 0.1
+  console.log (" o valor a ser pago é: : " + valorTotal);
 } 
 
+else if (codigoPagamento == 2){
+  valorTotal = valorTotal - valorTotal * 0.05
+  console.log (" o valor a ser pago é: : " + valorTotal);
+}
+
+else if (codigoPagamento == 3){
+  valorTotal = valorTotal / 2
+  console.log ("o valor a ser pago é:" + valorTotal);
+}
+
+else if(codigoPagamento == 4){
+  valorTotal = valorTotal / 3 
+  valorTotal = valorTotal + valorTotal * 0.1 
+  console.log ("o valor a ser pago é : " + valorTotal);
+}
