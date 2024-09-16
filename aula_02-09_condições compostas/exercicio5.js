@@ -8,10 +8,22 @@ Código =>  Condição Pagamento
 4      => Em 3 vezes, preço + 10% de juros
 */
 
-var arroz = 20.00
-var feijão= 14.50
-var sal = 6.00
-var acucar = 17.50
 
-var quantidade = parseFloat (prompt(" Digite a quantidade de alimentos: "));
-var total 
+var precoDoProduto =  parseFloat(prompt("Digite o valor do produto: "));
+var quantidade = parseFloat(prompt(" Digite a quantidade dos produtos: "));
+var valorTotal = precoDoProduto * quantidade ;
+
+var descricaoCodigo = "======= Escolha uma condição de pagamento =====\n ";
+descricaoCodigo = descricaoCodigo = "cód | condição de pagamento \n ";
+descricaoCodigo += "1 | À vista, dinheiro ou cheque, 10% de desconto\n ";
+descricaoCodigo += "2 | À vista, cartão de credito, 5% de desconto\n ";
+descricaoCodigo += "3 | Em 2 vezes, preço sem juros\n ";
+descricaoCodigo += "4 | Em 3 vezes, preço + 10% de juros\n ";
+
+var codigoPagamento = parseInt(prompt(descricaoCodigo));
+
+if (codigoPagamento == 1){
+  valorTotal / 0.1 ;  
+  console.log (" o valor foi: " + valorTotal);
+} 
+
