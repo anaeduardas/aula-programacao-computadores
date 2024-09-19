@@ -24,7 +24,7 @@ var codigoPagamento = parseInt(prompt(descricaoCodigo));
 
 if (codigoPagamento == 1){
   valorTotal = valorTotal - valorTotal * 0.1
-  console.log (" o valor a ser pago é: : " + valorTotal);
+  console.log (" o valor a ser pago é:  " + valorTotal);
 } 
 
 else if (codigoPagamento == 2){
