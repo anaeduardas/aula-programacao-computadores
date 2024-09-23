@@ -31,30 +31,14 @@ menubebidas += "2 |Refrigerante 2L\n ";
 menubebidas += "3 |Agua \n ";
 menubebidas += "4 |Suco\n ";
 
-var pizza = parseInt(prompt("Qual pizza : "));
-
-if (pizza == 1){
-    var mussarela = 20.00
-    console.log ("sabor: mussarela");
-}
-else if (pizza == 2){
-    var calabresa = 25.00
-    console.log ("sabor: calabresa");
-}
-if (pizza == 3){
-    var margarita = 23.00
-    console.log ("sabor: margarita");
-}
-if (pizza == 4){
-    var quatroqueijos = 29.99
-    console.log ("sabor: 4 queijos");
-}
-if (pizza == 5){
-    var baiana = 22.50
-    console.log ("sabor: baiana");
-}
-var bebidas = parseInt(prompt("Qual refrigerante: ")); 
-
-
+var pizza = parseInt(prompt("Qual pizza deseja comprar : "));
 var quantidade = parseInt(prompt("qual a quantidade:  "));
+
+if (menupizzas == 1){
+    console.log("mussarela")
+}
+
+
+
+
 
