@@ -9,9 +9,7 @@ var i = 0
 
 if (i == receitas); 
 while (i)
-
-
-
+console.log (i)
 
 var i = 0
 if (i == receitas);
@@ -20,6 +18,6 @@ while  (i)
 
 
 
-var Listadespesas = prompt("entregue a lista com todaas as despesas:");
+var Listadespesas = prompt("entregue a lista com todas as despesas:");
 
 console.log
