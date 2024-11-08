@@ -26,6 +26,7 @@ while (i < despesas.length){
     totaldespesa += despesas[i];
     i++;
 }
+
 console.log ("o total de despesas é", total);
 console.log("a diferença entre receita e despesa é " + totalreceita - totaldespesa);
  
