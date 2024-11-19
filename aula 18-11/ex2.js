@@ -16,4 +16,4 @@ var bebidas = [
 console.log ("Codigo | nome | valor ");
 for (var i = 0; i < bebidas.length; i++){
     console.log (bebidas [i].codigo, " | ", bebidas[i].nome, " | ", bebidas[i].valor);
-}
+} 
