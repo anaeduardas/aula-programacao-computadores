@@ -28,5 +28,24 @@ Bonus: adicione formas de pagamento, ex: A Vista com 5% de desconto e valor para
  */
 
 var listalanches = [
-    {codigo: 1, nome: ""}
+    {codigo: 1, nome: "hamburguer", valor: 10},
+    {codigo: 2, nome: "x-salada", valor: 15},
+    {codigo: 3, nome: "x-bacon", valor: 20},
 ]
+
+console.log("  codigo |   nome   |  valor  ");
+for(var i = 0; i < listalanches.length; i++) {
+console.log (listalanches[i]. codigo, "   | ", listalanches[i], nome, " | ", listalanches[i], valor);
+}
+
+var codigo = parseint(prompt("escolha o codigo de um lanche: "));
+var achou = false;
+for (var i =0; i < listalanches.length; i++) {
+    if (codigo == listalanches[i].codigo) {
+        console.log("\n\n ======= escolhido foi ===== ");
+        console.log(listaslanches[i].codigo, "
+            ")
+    }
+}
+
+
