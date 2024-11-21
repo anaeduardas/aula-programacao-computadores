@@ -9,3 +9,19 @@ Ao final, apresente o pedido com todos os itens, total dos lanches, total das be
 Bonus: adicione formas de pagamento, ex: A Vista com 5% de desconto e valor para frete caso seja entrega. 
 */
 
+var lanches = [
+
+{ codigo: 1, nome: "hamburguer", valor : 12},
+{ codigo: 2, nome: "X-salada", valor: 11},
+{ codigo: 3, nome: "X-burguer", valor: 15},
+{ codigo: 4, nome: "hot-dog", valor: 10},
+
+]
+
+for (var i = 0; i < lanches.length ; i++){
+console.log(lanches [i])
+}
+
+var cliente  = parseFloat(prompt("Selecione o lanche que queira adicionar:  "));
+
+
