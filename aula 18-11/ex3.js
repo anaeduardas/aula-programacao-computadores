@@ -8,20 +8,42 @@ Ao final, apresente o pedido com todos os itens, total dos lanches, total das be
 
 Bonus: adicione formas de pagamento, ex: A Vista com 5% de desconto e valor para frete caso seja entrega. 
 */
-
-var lanches = [
+var listalanches = [
 
 { codigo: 1, nome: "hamburguer", valor : 12},
 { codigo: 2, nome: "X-salada", valor: 11},
 { codigo: 3, nome: "X-burguer", valor: 15},
 { codigo: 4, nome: "hot-dog", valor: 10},
 
-]
+];
 
-for (var i = 0; i < lanches.length ; i++){
-console.log(lanches [i])
+var bebidas = [
+    { nome: "Refrigerante", valor : 5 },
+    { nome: "Suco", valor: 6 },
+    { nome: "Água", valor: 2 }
+];
+
+console.log("  codigo |   nome   |  valor  ");
+for(var i = 0; i < listalanches.length; i++) {
+console.log (listalanches[i].codigo, "   | ", listalanches[i].nome, " | ", listalanches[i].valor);
 }
 
-var cliente  = parseFloat(prompt("Selecione o lanche que queira adicionar:  "));
+var pergunta = parseInt(prompt("digite o codigo do lanche esclhido:" ));
+
+
+var quantidade = parseInt(prompt("Digite a quantidade: "));
+
+var resposta= prompt("deseja continuar? sim/não");
+var continuar = true;
+
+
+var pedidos = [];
+var totalLanches = 0;
+var totalBebidas = 0;
+
+
+
+
+
 
 
