@@ -8,54 +8,67 @@ Ao final, apresente o pedido com todos os itens, total dos lanches, total das be
 
 Bonus: adicione formas de pagamento, ex: A Vista com 5% de desconto e valor para frete caso seja entrega. 
 */
+
 var listalanches = [
 
-{ codigo: 1, nome: "hamburguer", valor : 12},
-{ codigo: 2, nome: "X-salada", valor: 11},
-{ codigo: 3, nome: "X-burguer", valor: 15},
-{ codigo: 4, nome: "hot-dog", valor: 10},
-
-];
-
-var bebidas = [
-
-    { nome: "Refrigerante", valor : 5 },
-    { nome: "Suco", valor: 6 },
-    { nome: "Água", valor: 2 }
-];
-
-console.log("  codigo |   nome   |  valor  ");
-for(var i = 0; i < listalanches.length; i++) {
-console.log (listalanches[i].codigo, "   | ", listalanches[i].nome, " | ", listalanches[i].valor);
-}
-
-var pergunta = parseInt(prompt("digite o codigo do lanche esclhido:" ));
-
-if (pergunta == listalanches.codigo){
-    i++
-    pedidos = []
-}
-
-var quantidade = parseInt(prompt("Digite a quantidade: "));
-
-if (pergunta == listalanches.codigo){
-    i++
-    pedidos = []
-}
-
-var soma = quantidade * listalanches.valor 
-
-var resposta= prompt("que pedir mais algo? sim/não");
-var continar = 's'
-var parar = 'n'
-while (resposta == 's') {
-    resposta= prompt("que pedir mais algo? sim/não");
-    i++
-}
- 
-for (i == 0; i < listalanches.lenght; i++)
-    console.log (pedidos.lenght + soma )
-
-
-
-
+    { codigo: 1, nome: "hamburguer", valor : 12},
+    { codigo: 2, nome: "X-salada", valor: 11},
+    { codigo: 3, nome: "X-burguer", valor: 15},
+    { codigo: 4, nome: "hot-dog", valor: 10},
+    
+    ];
+    
+    var bebidas = [
+    
+        { nome: "Refrigerante", valor : 5 },
+        { nome: "Suco", valor: 6 },
+        { nome: "Água", valor: 2 }
+    ];
+    
+    console.log("  codigo |   nome   |  valor  ");
+    for(var i = 0; i < listalanches.length; i++) {
+    console.log (listalanches[i].codigo, "   | ", listalanches[i].nome, " | ", listalanches[i].valor);
+    }
+    
+    var condicao = "s"
+    var pedidos = [ ]
+    
+    
+    while (condicao == "s") {
+        var codigoLanches = parseInt(prompt("Digite o CÓDIGO do lanche desejado:"));
+        var qtdeLanches = parseInt(prompt("Digite a QUANTIDADE de lanches desejada:"));
+    
+        for (var i = 0; i < listaLanches.length; i++) {
+            if (codigoLanches == listaLanches[i].codigo) {
+                pedidos[pedidos.length] = {
+                    nome: listaLanches[i].nome,
+                    quantidade: qtdeLanches,
+                    valor: listaLanches[i].preco * qtdeLanches
+                }
+            }
+        }
+    
+        condicao = prompt("Deseja adicionar mais lanches? (s / n)");
+    }
+    
+    while (resposta == 's') {
+       var pergunta2 = parseInt(prompt("digite o codigo do lanche esclhido:  "));
+        i++
+    } 
+    
+    
+    if (pergunta == listalanches.codigo){
+        pedidos = [listalanches[i].codigo, listalanches[i].nome ]
+        i++
+    }
+    
+    if (resposta == 'n');
+    
+    for (var i =0; i < listalanches.length; i++) {
+        if (codigo == listalanches[i].codigo) {
+            console.log("\n\n ======= escolhido foi ===== ");
+            console.log( listalanches[i].codigo, " | ",  listalanches[i].nome );
+        }
+    }
+    
+    
