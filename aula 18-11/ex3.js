@@ -18,6 +18,7 @@ var listalanches = [
 ];
 
 var bebidas = [
+
     { nome: "Refrigerante", valor : 5 },
     { nome: "Suco", valor: 6 },
     { nome: "Água", valor: 2 }
@@ -30,19 +31,30 @@ console.log (listalanches[i].codigo, "   | ", listalanches[i].nome, " | ", lista
 
 var pergunta = parseInt(prompt("digite o codigo do lanche esclhido:" ));
 
+if (pergunta == listalanches.codigo){
+    i++
+    pedidos = []
+}
 
 var quantidade = parseInt(prompt("Digite a quantidade: "));
 
-var resposta= prompt("deseja continuar? sim/não");
-var continuar = true;
+if (pergunta == listalanches.codigo){
+    i++
+    pedidos = []
+}
 
+var soma = quantidade * listalanches.valor 
 
-var pedidos = [];
-var totalLanches = 0;
-var totalBebidas = 0;
-
-
-
+var resposta= prompt("que pedir mais algo? sim/não");
+var continar = 's'
+var parar = 'n'
+while (resposta == 's') {
+    resposta= prompt("que pedir mais algo? sim/não");
+    i++
+}
+ 
+for (i == 0; i < listalanches.lenght; i++)
+    console.log (pedidos.lenght + soma )
 
 
 
