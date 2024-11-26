@@ -9,42 +9,71 @@ Ao final, apresente o pedido com todos os itens, total dos lanches, total das be
 Bonus: adicione formas de pagamento, ex: A Vista com 5% de desconto e valor para frete caso seja entrega. 
 */
 
-var listalanches = [
-    { codigo: 1, nome: "hamburguer", valor : 12},
-    { codigo: 2, nome: "X-salada", valor: 11},
-    { codigo: 3, nome: "X-burguer", valor: 15},
-    { codigo: 4, nome: "hot-dog", valor: 10},
-    
-    ];
-    
-    console.log("  codigo |   nome   |  valor  ");
-    for(var i = 0; i < listalanches.length; i++) {
-    console.log (listalanches[i].codigo, "   | ", listalanches[i].nome, " | ", listalanches[i].valor);
-    }
-    
-    
-    var listaPedidos = [ ]
-    var ipedidos = 0
-    var continuar = 1 
-     
-        var codigoLanches = parseInt(prompt("Digite o codigo do lanche desejado:"));
-        var quantidade = parseInt(prompt("Digite a quantidade :  "));
+// Lista de lanches
 
+var listaLanches = [
+    { codigo: 1, nome: "Hamburgue", preco: 10 },
+    { codigo: 2, nome: "Dogão", preco: 15 },
+    { codigo: 3, nome: "X-Infarto", preco: 30 }
+];
 
-    if ( codigoLanches == listalanches[i].codigo){
-        listaPedidos = (listaPedidos[i])
-        i++
-        
+var listaBebidas = [
+    { codigo: 1, nome: "Coca-Cola", preco: 10 },
+    { codigo: 2, nome: "Suco de Laranja", preco: 15 },
+    { codigo: 3, nome: "Chorume", preco: 30 }
+];
+
+var iPedido = 0;
+listaPedido = [];
+
+var continuar = 1;
+
+while (continuar) {
+    console.log(" == LANCHES DA SUPER LANCHONETE DO INFO ==");
+    console.log("Código | Nome | Preço")
+    for (var i = 0; i < listaLanches.length; i++) {
+        console.log(`${listaLanches[i].codigo} | ${listaLanches[i].nome} | ${listaLanches[i].preco}`);
     }
 
-    
-    for (i= 0; i < listalanches.lenght; i++ ){
-        listaPedidos =  (listaPedidos[i]);
-        i++
+    var codigoLanche = parseInt(prompt("Digite o código do Lanche"));
+    var quantidadeLanche = parseInt(prompt("Digite a quantidade de lanches que deseja:"));
+
+    for (var i = 0; i < listaLanches.length; i++) {
+        if (codigoLanche == listaLanches[i].codigo) {
+            listaPedido[iPedido] = listaLanches[i];
+            listaPedido[iPedido].quantidade = quantidadeLanche;
+        }
     }
 
-    var continuar = parseInt(prompt("quer adidonar mais um lanche à sua lista? digite 1 para sim e 0 para não " ));
-    
-     while (continuar  == 1){
-        var codigoLanches = parseInt(prompt("Digite o codigo do lanche desejado:"));
-     }
+    continuar = parseInt(prompt("Digite 1 se deseja adicionar mais lanches\nDigite 0 para continuar o pedido."));
+    iPedido++;
+}
+
+continuar = 1;
+
+while (continuar) {
+    console.log(" == BEBIDAS DA SUPER LANCHONETE DO INFO ==");
+    console.log("Código | Nome | Preço")
+    for (var i = 0; i < listaBebidas.length; i++) {
+        console.log(`${listaBebidas[i].codigo} | ${listaBebidas[i].nome} | ${listaBebidas[i].preco}`);
+    }
+
+    var codigoBebida = parseInt(prompt("Digite o código da bebida"));
+    var quantidadeBebida = parseInt(prompt("Digite a quantidade de bebidas que deseja:"));
+
+    for (var i = 0; i < listaBebidas.length; i++) {
+        if (codigoLanche == listaLanches[i].codigo) {
+            listaPedido[iPedido] = listaBebidas[i];
+            listaPedido[iPedido].quantidade = quantidadeBebida;
+        }
+    }
+
+    continuar = parseInt(prompt("Digite 1 se deseja adicionar mais lanches\nDigite 0 para continuar o pedido."));
+    iPedido++;
+}
+
+var totalPedido = 0;
+for (var i = 0; i< listaPedido.length; i++){
+    totalPedido += listaPedido[i].preco * listaPedido.quantidade;
+}
+console.log("Total do pedido: ", totalPedido);
