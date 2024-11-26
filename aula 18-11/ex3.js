@@ -27,7 +27,7 @@ var listalanches = [
     var ipedidos = 0
     var continuar = 1 
      
-        var codigoLanches = parseInt(prompt("Digite o CÓDIGO do lanche desejado:"));
+        var codigoLanches = parseInt(prompt("Digite o codigo do lanche desejado:"));
         var quantidade = parseInt(prompt("Digite a quantidade :  "));
 
 
