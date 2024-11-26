@@ -43,8 +43,7 @@ var achou = false;
 for (var i =0; i < listalanches.length; i++) {
     if (codigo == listalanches[i].codigo) {
         console.log("\n\n ======= escolhido foi ===== ");
-        console.log(listaslanches[i].codigo, "
-            ")
+        console.log(listaslanches[i].codigo, " ")
     }
 }
 
