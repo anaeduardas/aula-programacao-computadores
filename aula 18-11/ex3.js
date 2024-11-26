@@ -25,16 +25,26 @@ var listalanches = [
     
     var listaPedidos = [ ]
     var ipedidos = 0
-
+    var continuar = 1 
+     
         var codigoLanches = parseInt(prompt("Digite o CÓDIGO do lanche desejado:"));
+        var quantidade = parseInt(prompt("Digite a quantidade :  "));
+
 
     if ( codigoLanches == listalanches[i].codigo){
-        listaPedidos = (ipedidos[i])
+        listaPedidos = (listaPedidos[i])
+        i++
+        
+    }
+
+    
+    for (i= 0; i < listalanches.lenght; i++ ){
+        listaPedidos =  (listaPedidos[i]);
         i++
     }
-    
-        var qtdeLanches = parseInt(prompt("Digite a QUANTIDADE de lanches desejada: "));
 
-        for (var i = 0; i < listalanches.length; i++ ){
-            ipedidos
-        }
+    var continuar = parseInt(prompt("quer adidonar mais um lanche à sua lista? digite 1 para sim e 0 para não " ));
+    
+     while (continuar  == 1){
+        var codigoLanches = parseInt(prompt("Digite o codigo do lanche desejado:"));
+     }
